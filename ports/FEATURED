@@ -23,6 +23,7 @@ gps|util|1.0|12K|GNSS / hybrid location — ships in BerryCore
 bdk-cli|crypto|2.0.0|9.1M|BDK Bitcoin wallet CLI — Electrum sync over TLS (testnet)
 dropbear|net|2026.91.1|1.1M|Dropbear SSH client and server (dbclient, ssh, dropbearkey)
 bbm|net|1.0.0|12K|Berry Bridge Messenger — device relay for berrycore.sw7ft.com
+clash-proxy|net|0.2.0|382K|Clash-compatible local proxy — clash-proxy import <url> (port 7890)
 android-apps|util|1.0|89M|Curated Android APKs — RDP, Kiwi, Term49Bridge, XServer, etc.
 elinks|web|0.17.0|1.3M|Text web browser with SSL/TLS and JavaScript (QuickJS)
 term49-web|web|1.0|54K|Browser terminal — xterm.js over WebSocket (port 7681)

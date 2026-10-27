@@ -60,4 +60,5 @@ fm|util|1.0|16K|Analog FM tuner from Term49 (qpkg install fm)
 mem|util|1.0|12K|Process memory peek from Term49 (qpkg install mem)
 dropbear|net|2026.91.1|1.1M|Dropbear SSH client (dbclient/ssh) and server for Passport (qpkg install dropbear)
 bbm|net|1.0.0|12K|Berry Bridge Messenger — native relay client for berrycore.sw7ft.com (bbm who/send/poll)
+clash-proxy|net|0.2.0|382K|Clash-compatible local proxy (SS/VMess) with subscription import — clash-proxy import <url> (qpkg install clash-proxy)
 
