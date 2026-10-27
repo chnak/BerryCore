@@ -25,6 +25,7 @@ berry-browser|web|1.0.27|111M|CLI browser via content_shell|web-berry-browser-1.
 berry-remote|web|1.0|80K|Berry Browser Chromium viewer on :8080|web-berry-remote-1.0.zip|none
 berryremote|web|1.0|80K|Alias for berry-remote (:8080)|web-berry-remote-1.0.zip|berry-remote
 node-term49|lang|22.0.0|18M|Node.js v22 for Term49/QNX|lang-node-term49-22.0.0.zip|none
+node24|lang|24.22.1|29M|Node.js v24.22.1 with ICU (Intl) for BB10/QNX, npm 11.19.1|lang-node24-24.22.1.zip|node-term49
 android-apps|util|1.0|89M|Curated Android APKs for sideloading|util-android-apps-1.0.zip|none
 wifi-chat|util|1.0.0|12K|P2P chat over WiFi|util-wifi-chat-1.0.0.zip|none
 berrybot|util|1.0.0|600K|Command-line teaching assistant|util-berrybot-1.0.0.zip|none

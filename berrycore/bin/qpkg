@@ -3,9 +3,13 @@
 # Manage BerryCore updates and install additional ports
 
 VERSION="0.2.0"
+# Core releases (qpkg update) still come from upstream.
 GITHUB_REPO="sw7ft/BerryCore"
 GITHUB_API="https://api.github.com/repos/$GITHUB_REPO"
-GITHUB_RAW="https://raw.githubusercontent.com/$GITHUB_REPO/main"
+# Port catalog (PACKAGES/INDEX/FEATURED + port zips) defaults to this fork.
+# Override with BERRYCORE_PORTS_REPO (e.g. sw7ft/BerryCore).
+PORTS_REPO="${BERRYCORE_PORTS_REPO:-chnak/BerryCore}"
+GITHUB_RAW="https://raw.githubusercontent.com/$PORTS_REPO/main"
 DOWNLOAD_DIR="/accounts/1000/shared/documents"
 
 # Colors (if terminal supports it)
@@ -685,7 +689,7 @@ cmd_ports() {
 
     if [ $? -ne 0 ] || [ -z "$FEATURED_CONTENT" ]; then
         print_error "Failed to fetch ports catalog from GitHub"
-        echo "Try: https://github.com/$GITHUB_REPO/tree/main/ports"
+        echo "Try: https://github.com/$PORTS_REPO/tree/main/ports"
         exit 1
     fi
 
@@ -1740,7 +1744,8 @@ ${BOLD}EXAMPLES:${NC}
   qpkg uninstall berry-remote  # Same as remove
 
 ${BOLD}REPOSITORY:${NC}
-  https://github.com/$GITHUB_REPO
+  core:  https://github.com/$GITHUB_REPO
+  ports: https://github.com/$PORTS_REPO
 
 ${BOLD}VERSION:${NC}
   qpkg $VERSION
