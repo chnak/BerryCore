@@ -25,6 +25,7 @@ berry-browser|web|1.0.27|111M|CLI browser via content_shell|web-berry-browser-1.
 berry-remote|web|1.0|80K|Berry Browser Chromium viewer on :8080|web-berry-remote-1.0.zip|none
 berryremote|web|1.0|80K|Alias for berry-remote (:8080)|web-berry-remote-1.0.zip|berry-remote
 node-term49|lang|22.0.0|18M|Node.js v22 for Term49/QNX|lang-node-term49-22.0.0.zip|none
+node24|lang|24.22.1|29M|Node.js v24.22.1 with ICU (Intl) for BB10/QNX, npm 11.19.1|lang-node24-24.22.1.zip|node-term49
 android-apps|util|1.0|89M|Curated Android APKs for sideloading|util-android-apps-1.0.zip|none
 wifi-chat|util|1.0.0|12K|P2P chat over WiFi|util-wifi-chat-1.0.0.zip|none
 berrybot|util|1.0.0|600K|Command-line teaching assistant|util-berrybot-1.0.0.zip|none
@@ -65,6 +66,7 @@ tcpdump|net|4.99.5|499K|Network packet capture and analysis|util-tcpdump-4.99.5.
 usbdbg|util|1.0.0|9K|Generic USB serial debugger|util-usbdbg-1.0.0.zip|none
 dropbear|net|2026.91.1|1.1M|Dropbear SSH client and server (QNX client fix)|net-dropbear-2026.91.1.zip|none
 bbm|net|1.0.0|12K|Berry Bridge Messenger relay client|net-bbm-1.0.0.zip|none
+clash-proxy|net|0.2.0|382K|Clash-compatible local proxy (SS/VMess) with subscription import|net-clash-proxy-0.2.0.zip|none
 less|util|661|103K|GNU pager|util-less-661.zip|core
 pv|util|1.8.14|30K|Pipe progress meter|util-pv-1.8.14.zip|core
 msmtp|net|1.8.25|45K|Lightweight SMTP client|util-msmtp-1.8.25.zip|none
