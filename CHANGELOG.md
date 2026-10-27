@@ -9,6 +9,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.90.2] - 2026-10-27
+
+### Added
+
+- **node24 port**: Node.js v24.22.1 cross-built for armle-v7/QNX with
+  `--with-intl=small-icu` (ICU 78.3), bundled npm 11.19.1. `qpkg install node24`
+  (supersedes `node-term49`).
+
+### Changed
+
+- **qpkg**: core releases and the port catalog now default to the
+  `chnak/BerryCore` fork. Override with `BERRYCORE_REPO` /
+  `BERRYCORE_PORTS_REPO` (e.g. `BERRYCORE_REPO=sw7ft/BerryCore`).
+- **VERSION** → 0.90.2
+
+---
+
 ## [dropbear-2026.91.1] - 2026-09-02
 
 ### Fixed

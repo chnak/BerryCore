@@ -3,12 +3,11 @@
 # Manage BerryCore updates and install additional ports
 
 VERSION="0.2.0"
-# Core releases (qpkg update) still come from upstream.
-GITHUB_REPO="sw7ft/BerryCore"
+# This fork is the default source for both core releases and the port catalog.
+# Set BERRYCORE_REPO=sw7ft/BerryCore to follow upstream instead.
+GITHUB_REPO="${BERRYCORE_REPO:-chnak/BerryCore}"
 GITHUB_API="https://api.github.com/repos/$GITHUB_REPO"
-# Port catalog (PACKAGES/INDEX/FEATURED + port zips) defaults to this fork.
-# Override with BERRYCORE_PORTS_REPO (e.g. sw7ft/BerryCore).
-PORTS_REPO="${BERRYCORE_PORTS_REPO:-chnak/BerryCore}"
+PORTS_REPO="${BERRYCORE_PORTS_REPO:-$GITHUB_REPO}"
 GITHUB_RAW="https://raw.githubusercontent.com/$PORTS_REPO/main"
 DOWNLOAD_DIR="/accounts/1000/shared/documents"
 
