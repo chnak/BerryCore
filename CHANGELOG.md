@@ -9,6 +9,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.90.3] - 2026-10-27
+
+### Fixed
+
+- The setup hub fallback catalog (`share/setup/PACKAGES`) now lists
+  `node24` and `clash-proxy`, so a fresh install shows both ports before
+  the first `qpkg` catalog fetch populates `.cache/qpkg/PACKAGES`.
+
+### Changed
+
+- **VERSION** → 0.90.3 (core code unchanged; `berrycore.zip` differs only
+  in the embedded catalog and version strings).
+
+---
+
 ## [0.90.2] - 2026-10-27
 
 ### Added
