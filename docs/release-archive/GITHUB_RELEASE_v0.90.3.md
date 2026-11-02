@@ -25,6 +25,20 @@ Re-uploaded `install.sh` (17,917 B, sha256 `ee0eac2692af9134…`). It now:
   instead of `rm -rf`
 - adds `--no-profile` and `--no-termcfg`; `.term48rc` backups are timestamped
 
+## berrycore.zip hotfix (2026-11-02)
+
+Re-uploaded `berrycore.zip` (**315,075,417 B**, sha256 `33a7272ecb1de38e…`).
+Two packaging bugs fixed:
+
+- **Directory permissions were 0000** (inherited from upstream's zip). `unzip`
+  created `bin/`, `packages/`, `share/`, `doc/` as `d-----S---`, so the
+  package-install step could not write into them. This is why a fresh install
+  ended up with no `ls`/`printf` and errors like `ls: illegal option -- -` and
+  `term49_splash`. Directories are now `0755`.
+- **`packages/gcc.zip` was a Git LFS pointer** (134 B instead of 108 MB), so
+  the installer reported `FAIL gcc.zip`. The pointer is now excluded; gcc can
+  be added later by fetching the LFS object.
+
 ## Assets
 
 | Asset | Purpose |
