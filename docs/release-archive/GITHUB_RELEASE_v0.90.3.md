@@ -6,7 +6,24 @@ first `qpkg` catalog fetch.
 
 Core code is unchanged from v0.90.2; `berrycore.zip` differs only in
 `share/setup/PACKAGES` and the version strings (`VERSION`, `env.sh`).
-`install.sh` is unchanged.
+`install.sh` was refreshed on 2026-11-02 with installer fixes (see below).
+
+## install.sh hotfix (2026-11-02)
+
+Re-uploaded `install.sh` (17,917 B, sha256 `ee0eac2692af9134…`). It now:
+
+- runs from its own directory and verifies `berrycore.zip` before touching anything
+- falls back to `unzip` when `pbpkgadd` (a `python3.2` script) is unavailable —
+  on a fresh device this previously installed **zero** packages, leaving no
+  `ls`/`printf` (coreutils), which showed up as `ls: illegal option -- -` and
+  `term49_splash` errors
+- never rewrites `~/.profile` unless the install completed (`env.sh` and
+  `sample_profile` present)
+- only enables `alias ls='ls --color=auto'` when `bin/ls` exists
+- guards the `term49_splash` call in the generated profile
+- keeps an existing `bcllm` / `berrybridge-agent` as a timestamped `.bak`
+  instead of `rm -rf`
+- adds `--no-profile` and `--no-termcfg`; `.term48rc` backups are timestamped
 
 ## Assets
 
